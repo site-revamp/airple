@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airple | Smart Aircon Servicing, Installation & Maintenance Singapore</title>
+<meta name="description" content="Book aircon servicing, installation, chemical cleaning and repairs with Airple Singapore. Enjoy convenient digital booking, technician tracking and service management.">
+<meta name="theme-color" content="#073F69">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0878C9;--navy:#073F69;--teal:#28B8C5;
+  --ice:#E8F5FB;--ink:#1B2B38;--muted:#637585;
+  --white:#fff;--surface:#F5F8FA;--line:#DCE6EC;
+  --shadow:0 18px 45px rgba(7,63,105,.1);
+  --max:1160px;--radius:19px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.section{padding:88px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--blue);font-size:.75rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.eyebrow:before{content:"";width:24px;height:2px;background:var(--teal)}
+h1,h2,h3,h4{font-family:Manrope,Inter,sans-serif;color:var(--navy);line-height:1.17;margin:0}
+h1{font-size:clamp(2.6rem,5.4vw,4.7rem);letter-spacing:-.055em}
+h2{font-size:clamp(2rem,3.7vw,3rem);letter-spacing:-.04em}
+h3{font-size:1.2rem}
+p{margin:0;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 21px;border-radius:10px;border:1px solid transparent;font-size:.9rem;font-weight:750;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px rgba(8,120,201,.2)}
+.btn-primary:hover{background:var(--navy);transform:translateY(-2px)}
+.btn-outline{background:#fff;color:var(--navy);border-color:var(--line)}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.btn-wa{background:#168B69;color:#fff}
+.btn-wa:hover{background:#0F7256}
+.topbar{background:var(--navy);color:#dcecf7;font-size:.8rem}
+.topbar-inner{display:flex;justify-content:space-between;gap:15px;padding:8px 0}
+.topbar a{color:#fff;font-weight:750}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:10px;min-width:max-content}
+.brand-symbol{width:43px;height:43px;border-radius:13px;background:var(--navy);color:white;display:grid;place-items:center;font-family:Manrope;font-weight:800;font-size:1.3rem;position:relative}
+.brand-symbol:after{content:"";position:absolute;width:9px;height:9px;background:var(--teal);border-radius:50%;right:5px;top:5px}
+.brand-name{font-family:Manrope;font-weight:800;color:var(--navy);font-size:1.12rem;line-height:1}
+.brand-name small{display:block;font-family:Inter;font-size:.62rem;letter-spacing:.13em;color:var(--muted);margin-top:5px}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:.85rem;font-weight:650;color:#344b5c}
+.nav-links a:hover{color:var(--blue)}
+.nav-actions{display:flex;gap:9px}
+.nav-actions .btn{padding:11px 15px;font-size:.81rem}
+.menu-toggle{display:none;border:0;background:none;font-size:1.6rem;color:var(--navy);cursor:pointer}
+.hero{position:relative;isolation:isolate;min-height:650px;display:flex;align-items:center;overflow:hidden;background:var(--navy);color:#fff}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(4,35,60,.95) 0%,rgba(4,45,75,.84) 50%,rgba(4,45,75,.28) 100%),url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1900&q=85") center/cover}
+.hero:after{content:"";position:absolute;z-index:-1;width:440px;height:440px;border:1px solid rgba(255,255,255,.16);border-radius:50%;right:-150px;bottom:-230px;box-shadow:0 0 0 55px rgba(255,255,255,.035),0 0 0 110px rgba(255,255,255,.025)}
+.hero-content{max-width:770px;padding:100px 0 112px}
+.hero .eyebrow{color:#9de7ed}
+.hero h1{color:#fff;margin:19px 0}
+.hero h1 span{color:#80e0e7}
+.hero-copy{font-size:1.06rem;color:#e0edf5;max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}
+.hero .btn-outline{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4);color:#fff}
+.hero-caption{margin-top:24px;font-size:.84rem;color:#d2e3ed}
+.hero-caption strong{color:white}
+.trust{background:var(--surface);border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{text-align:center;padding:25px 15px;border-right:1px solid var(--line)}
+.trust-item:last-child{border:0}
+.trust-item strong{display:block;font-family:Manrope;color:var(--navy);font-size:1.65rem;line-height:1.2}
+.trust-item span{font-size:.77rem;color:var(--muted);font-weight:650}
+.section-head{max-width:700px;margin-bottom:37px}
+.section-head h2{margin:13px 0}
+.section-head p{font-size:1rem}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.intro-image{position:relative}
+.intro-image img{width:100%;height:430px;object-fit:cover;border-radius:var(--radius)}
+.image-label{position:absolute;bottom:18px;left:18px;background:white;padding:14px 17px;border-radius:12px;box-shadow:var(--shadow)}
+.image-label strong{display:block;color:var(--navy);font-family:Manrope}
+.image-label span{font-size:.76rem;color:var(--muted)}
+.intro-copy h2{margin:14px 0 18px}
+.intro-copy p+p{margin-top:13px}
+.checks{list-style:none;padding:0;margin:23px 0 27px;display:grid;gap:10px}
+.checks li{display:flex;gap:10px;font-size:.9rem;font-weight:650}
+.checks li:before{content:"✓";width:22px;height:22px;flex:0 0 22px;border-radius:50%;display:grid;place-items:center;background:var(--ice);color:var(--blue);font-size:.77rem}
+.digital{background:var(--navy);color:white;overflow:hidden}
+.digital h2,.digital h3{color:white}
+.digital p{color:#c8dce8}
+.digital .eyebrow{color:#9de7ed}
+.digital-layout{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.digital-visual{min-height:400px;display:grid;place-items:center;position:relative}
+.phone{width:225px;height:390px;background:#fff;border:8px solid #dbe7ee;border-radius:32px;padding:24px 15px;color:var(--navy);box-shadow:0 25px 65px rgba(0,0,0,.3);position:relative}
+.phone:before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:55px;height:6px;background:#dbe7ee;border-radius:9px}
+.phone-head{font-family:Manrope;font-weight:800;font-size:1.15rem;margin:8px 0 14px}
+.phone-sub{font-size:.7rem;color:var(--muted)}
+.tracking-card{background:var(--ice);border-radius:12px;padding:13px;margin-top:17px}
+.tracking-card strong{font-size:.78rem;display:block}
+.tracking-card span{font-size:.67rem;color:var(--muted)}
+.map-lines{height:105px;background:linear-gradient(35deg,transparent 45%,#b6dce9 46%,#b6dce9 48%,transparent 49%),linear-gradient(130deg,transparent 43%,#b6dce9 44%,#b6dce9 46%,transparent 47%),#f4f9fb;border-radius:9px;margin-top:10px;position:relative}
+.pin{position:absolute;top:35px;left:57%;width:15px;height:15px;border-radius:50% 50% 50% 0;background:var(--blue);transform:rotate(-45deg)}
+.phone-button{background:var(--blue);color:white;text-align:center;border-radius:8px;padding:10px;margin-top:14px;font-size:.72rem;font-weight:800}
+.digital-features{display:grid;gap:19px;margin-top:28px}
+.digital-feature{display:flex;gap:14px;align-items:flex-start}
+.feature-icon{width:42px;height:42px;flex:0 0 42px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;color:#83e0e7;font-weight:800}
+.digital-feature h3{font-size:1rem;margin-bottom:4px}
+.digital-feature p{font-size:.85rem}
+.services{background:var(--surface)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;min-height:225px;transition:.2s}
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#b8dcec}
+.icon{width:48px;height:48px;border-radius:13px;background:var(--ice);color:var(--blue);display:grid;place-items:center;margin-bottom:18px}
+.icon svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.service-card h3{margin-bottom:9px}
+.service-card p{font-size:.87rem}
+.service-card a{display:inline-flex;color:var(--blue);font-weight:800;font-size:.82rem;margin-top:16px}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.price-card{border:1px solid var(--line);border-radius:17px;padding:27px;background:#fff}
+.price-card.featured{border:2px solid var(--blue);box-shadow:var(--shadow)}
+.price-tag{display:inline-block;background:var(--ice);color:var(--blue);font-size:.72rem;font-weight:800;border-radius:20px;padding:5px 10px;margin-bottom:17px}
+.price-card h3{margin-bottom:8px}
+.price-card p{font-size:.85rem;min-height:55px}
+.price{font-family:Manrope;color:var(--navy);font-size:2rem;font-weight:800;letter-spacing:-.04em;margin:16px 0}
+.price small{font-family:Inter;font-size:.75rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.price-card .btn{width:100%;margin-top:10px}
+.price-note{font-size:.77rem;margin-top:20px}
+.app-cta{background:var(--ice)}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.app-grid img{width:100%;height:340px;object-fit:cover;border-radius:var(--radius)}
+.app-copy h2{margin:14px 0}
+.app-copy p{margin-bottom:18px}
+.app-actions{display:flex;gap:10px;flex-wrap:wrap}
+.app-actions .btn-outline{background:transparent}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:23px}
+.why-item{padding:10px}
+.why-num{font-family:Manrope;font-size:2.2rem;font-weight:800;color:#b5e7ec}
+.why-item h3{margin:8px 0}
+.why-item p{font-size:.89rem}
+.cta{background:linear-gradient(110deg,var(--blue),var(--navy));padding:48px 0;color:white}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta h2{color:white;font-size:clamp(1.7rem,3vw,2.35rem)}
+.cta p{color:#d9eaf4;margin-top:8px}
+.cta-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cta .btn-outline{white-space:nowrap}
+.contact{background:var(--surface)}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+.contact-copy h2{margin:13px 0 16px}
+.contact-list{display:grid;gap:17px;margin-top:27px}
+.contact-row{display:flex;gap:12px;align-items:flex-start}
+.contact-icon{width:40px;height:40px;flex:0 0 40px;border-radius:11px;background:var(--ice);color:var(--blue);display:grid;place-items:center;font-weight:800}
+.contact-row strong{display:block;color:var(--navy);font-size:.9rem}
+.contact-row a,.contact-row span{font-size:.86rem;color:var(--muted)}
+.form-card{background:white;border:1px solid var(--line);border-radius:19px;padding:29px;box-shadow:var(--shadow)}
+.form-card h3{font-size:1.4rem;margin-bottom:7px}
+.form-card>p{font-size:.86rem;margin-bottom:21px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:7px}
+.field.full{grid-column:1/-1}
+label{font-size:.79rem;font-weight:750;color:var(--navy)}
+input,select,textarea{width:100%;border:1px solid #d5e0e7;border-radius:9px;padding:12px 13px;outline:none;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,120,201,.1)}
+textarea{min-height:105px;resize:vertical}
+.form-card button{width:100%;margin-top:17px}
+.form-hint{font-size:.73rem;color:var(--muted);margin-top:10px}
+footer{background:#062F50;color:#d4e3ed;padding:52px 0 24px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:38px}
+footer .brand-name{color:#fff}
+footer .brand-name small{color:#b7ccda}
+footer p{font-size:.86rem;color:#b7ccda;margin-top:16px;max-width:360px}
+footer h4{color:#fff;font-size:.95rem;margin-bottom:15px}
+.footer-links{display:grid;gap:9px;font-size:.84rem;color:#c8d9e5}
+.footer-links a:hover{color:#8de1e7}
+.copyright{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding-top:19px;display:flex;justify-content:space-between;gap:15px;font-size:.75rem;color:#a9c0d0}
+.mobile-bar{display:none}
+@media(max-width:950px){
+ .nav-links{gap:13px;font-size:.78rem}
+ .nav-actions .btn-outline{display:none}
+ .digital-layout{gap:25px}
+ .pricing-grid{grid-template-columns:1fr 1fr}
+ .pricing-grid .price-card:last-child{grid-column:1/-1}
+}
+@media(max-width:760px){
+ .container{width:min(100% - 32px,var(--max))}
+ .section{padding:67px 0}
+ .topbar-inner{justify-content:center}
+ .topbar-inner span:first-child{display:none}
+ .nav{height:68px}
+ .menu-toggle{display:block}
+ .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;padding:20px 24px 25px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);flex-direction:column;align-items:flex-start;font-size:.95rem}
+ .nav-links.open{display:flex}
+ .nav-actions{display:none}
+ .hero{min-height:600px}
+ .hero:before{background:linear-gradient(90deg,rgba(4,35,60,.94),rgba(4,45,75,.68)),url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=85") center/cover}
+ .hero-content{padding:82px 0 95px}
+ .hero-copy{font-size:.98rem}
+ .trust-grid{grid-template-columns:1fr 1fr}
+ .trust-item:nth-child(2){border-right:0}
+ .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .intro-grid,.digital-layout,.app-grid,.contact-grid{grid-template-columns:1fr}
+ .intro-image{order:2}
+ .intro-image img{height:320px}
+ .digital-visual{min-height:390px;order:2}
+ .service-grid{grid-template-columns:1fr 1fr;gap:12px}
+ .service-card{padding:19px;min-height:240px}
+ .pricing-grid{grid-template-columns:1fr 1fr}
+ .why-grid{grid-template-columns:1fr;gap:15px}
+ .why-item{padding:0}
+ .app-grid img{height:280px}
+ .cta-inner{display:block}
+ .cta-actions{margin-top:20px}
+ .footer-grid{grid-template-columns:1fr 1fr}
+ .footer-grid>div:first-child{grid-column:1/-1}
+ .copyright{display:block}
+ .copyright span{display:block;margin-top:7px}
+ .mobile-bar{display:grid;grid-template-columns:1fr 1fr;gap:9px;position:fixed;z-index:60;bottom:0;left:0;right:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:white;border-top:1px solid var(--line);box-shadow:0 -8px 25px rgba(7,63,105,.1)}
+ .mobile-bar .btn{padding:13px 8px;font-size:.85rem}
+ body{padding-bottom:75px}
+}
+@media(max-width:480px){
+ .hero-actions .btn{width:100%}
+ .service-grid{grid-template-columns:1fr 1fr}
+ .service-card{padding:15px;min-height:260px}
+ .service-card h3{font-size:.98rem}
+ .service-card p{font-size:.81rem}
+ .icon{width:43px;height:43px;margin-bottom:14px}
+ .pricing-grid{grid-template-columns:1fr}
+ .pricing-grid .price-card:last-child{grid-column:auto}
+ .form-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ .form-card{padding:21px}
+ .footer-grid{grid-template-columns:1fr}
+ .footer-grid>div:first-child{grid-column:auto}
+ .trust-item strong{font-size:1.4rem}
+ .trust-item{padding:20px 8px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+ <div class="container topbar-inner">
+  <span>Smarter aircon maintenance starts here</span>
+  <span>Call Airple: <a href="tel:+6583856888">+65 8385 6888</a></span>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a class="brand" href="#home" aria-label="Airple homepage">
+   <span class="brand-symbol">A</span>
+   <span class="brand-name">AIRPLE<small>SMART AIRCON CARE</small></span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+   <a href="#about">About</a>
+   <a href="#digital">How It Works</a>
+   <a href="#services">Services</a>
+   <a href="#pricing">Pricing</a>
+   <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+   <a class="btn btn-outline" href="https://wa.me/6583856888" target="_blank" rel="noopener">WhatsApp</a>
+   <a class="btn btn-primary" href="#contact">Book a Service</a>
+  </div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container">
+  <div class="hero-content">
+   <span class="eyebrow">A smarter way to care for your aircon</span>
+   <h1>Aircon Care, <span>Made Smarter.</span></h1>
+   <p class="hero-copy">Book professional air-conditioning services with greater convenience. From technician tracking to digital service records, Airple brings more visibility and control to your aircon maintenance experience.</p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" href="#contact">Book a Service <span aria-hidden="true">→</span></a>
+    <a class="btn btn-outline" href="https://wa.me/6583856888" target="_blank" rel="noopener">WhatsApp Airple</a>
+   </div>
+   <p class="hero-caption"><strong>Book · Track · Manage</strong> — a more connected aircon service experience.</p>
+  </div>
+ </div>
+</section>
+
+<section class="trust" aria-label="Airple company highlights">
+ <div class="container trust-grid">
+  <div class="trust-item"><strong>Since 2017</strong><span>Company-established year</span></div>
+  <div class="trust-item"><strong>28,000+</strong><span>Customers, as advertised</span></div>
+  <div class="trust-item"><strong>2,800+</strong><span>Ratings, as advertised</span></div>
+  <div class="trust-item"><strong>4.96</strong><span>Homepage service rating</span></div>
+ </div>
+</section>
+
+<section class="section" id="about">
+ <div class="container intro-grid">
+  <div class="intro-image">
+   <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1100&q=85" alt="Technical professional working with equipment" loading="lazy">
+   <div class="image-label"><strong>Professional aircon care</strong><span>Service and convenience in one experience</span></div>
+  </div>
+  <div class="intro-copy">
+   <span class="eyebrow">About Airple</span>
+   <h2>Professional Service. A More Connected Experience.</h2>
+   <p>Airple combines air-conditioning maintenance services with digital tools designed to make booking and managing appointments more convenient.</p>
+   <p>Customers can use the company's digital service features to follow appointment progress, access service records and manage aspects of their maintenance experience.</p>
+   <ul class="checks">
+    <li>Online booking and service scheduling</li>
+    <li>Technician arrival tracking</li>
+    <li>Digital service records and documentation</li>
+    <li>Repair approval and payment features</li>
+   </ul>
+   <a class="btn btn-primary" href="#digital">Explore the Airple Experience</a>
+  </div>
+ </div>
+</section>
+
+<section class="section digital" id="digital">
+ <div class="container digital-layout">
+  <div>
+   <span class="eyebrow">The Airple experience</span>
+   <h2>Know More. Manage Better. Stay in Control.</h2>
+   <p>Airple's digital features help customers stay informed throughout the service process, rather than relying entirely on manual updates.</p>
+   <div class="digital-features">
+    <div class="digital-feature">
+     <div class="feature-icon">01</div>
+     <div><h3>Convenient Booking</h3><p>Arrange service appointments through the available digital booking channels.</p></div>
+    </div>
+    <div class="digital-feature">
+     <div class="feature-icon">02</div>
+     <div><h3>Technician Tracking</h3><p>Follow technician arrival progress with the company's GPS-based tracking feature.</p></div>
+    </div>
+    <div class="digital-feature">
+     <div class="feature-icon">03</div>
+     <div><h3>Digital Service Records</h3><p>Access service documentation, including photos and videos where provided.</p></div>
+    </div>
+    <div class="digital-feature">
+     <div class="feature-icon">04</div>
+     <div><h3>Repair and Payment Management</h3><p>Review repair requests and use the available digital payment features.</p></div>
+    </div>
+   </div>
+  </div>
+  <div class="digital-visual" aria-label="Illustrative service tracking phone interface">
+   <div class="phone">
+    <div class="phone-head">AIRPLE</div>
+    <div class="phone-sub">Your service appointment</div>
+    <div class="tracking-card">
+     <strong>Technician on the way</strong>
+     <span>Illustrative tracking interface</span>
+     <div class="map-lines"><span class="pin"></span></div>
+    </div>
+    <div class="tracking-card">
+     <strong>Service record</strong>
+     <span>Appointment details and service history</span>
+    </div>
+    <div class="phone-button">VIEW APPOINTMENT</div>
+    <div class="phone-sub" style="text-align:center;margin-top:15px">Illustrative design preview</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section services" id="services">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">Our services</span>
+   <h2>Aircon Services for Every Need.</h2>
+   <p>Make it easy for customers to find the right service and understand what to book.</p>
+  </div>
+  <div class="service-grid">
+   <article class="service-card">
+    <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="8" rx="2"/><path d="M7 16v3m5-3v4m5-4v3M7 8h10"/></svg></div>
+    <h3>General Servicing</h3>
+    <p>Routine aircon maintenance to help keep your units clean and operating properly.</p>
+    <a href="#pricing">View service pricing →</a>
+   </article>
+   <article class="service-card">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3s-6 7-6 11a6 6 0 0 0 12 0c0-4-6-11-6-11Z"/><path d="M9 15a3 3 0 0 0 3 3"/></svg></div>
+    <h3>Chemical Wash</h3>
+    <p>Deeper cleaning for air-conditioning components when a chemical wash is appropriate.</p>
+    <a href="#contact">Enquire about cleaning →</a>
+   </article>
+   <article class="service-card">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M4.5 7.5l15 9m0-9-15 9"/><circle cx="12" cy="12" r="8"/></svg></div>
+    <h3>ThermArctic Sanitizing</h3>
+    <p>Explore Airple's advertised sanitizing service and ask about its suitability for your system.</p>
+    <a href="#contact">Ask about sanitizing →</a>
+   </article>
+   <article class="service-card">
+    <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 6a5 5 0 0 0-6 6l-5 5 4 4 5-5a5 5 0 0 0 6-6l-3 3-3-3 2-4Z"/></svg></div>
+    <h3>Repair & Troubleshooting</h3>
+    <p>Get assistance with aircon faults, performance issues and repair requirements.</p>
+    <a href="#contact">Request repair support →</a>
+   </article>
+   <article class="service-card">
+    <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v8m-4-4h8"/></svg></div>
+    <h3>Gas Top-up</h3>
+    <p>Enquire about refrigerant-related checks and gas top-up where required.</p>
+    <a href="#contact">Enquire about gas top-up →</a>
+   </article>
+   <article class="service-card">
+    <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="8" rx="2"/><path d="M5 16h14M8 16v4m8-4v4"/></svg></div>
+    <h3>Installation</h3>
+    <p>Air-conditioning installation and replacement solutions, with pricing based on survey.</p>
+    <a href="#contact">Request installation quote →</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="pricing">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">Service pricing</span>
+   <h2>Know the Starting Price Before You Book.</h2>
+   <p>Display key service prices in a consistent format so customers can compare options more easily.</p>
+  </div>
+  <div class="pricing-grid">
+   <article class="price-card">
+    <span class="price-tag">Routine maintenance</span>
+    <h3>General Servicing</h3>
+    <p>For customers who need regular aircon maintenance.</p>
+    <div class="price">S$30.30 <small>/ unit, from</small></div>
+    <a class="btn btn-outline" href="#contact">Enquire Now</a>
+   </article>
+   <article class="price-card featured">
+    <span class="price-tag">Recurring maintenance</span>
+    <h3>Contract Servicing</h3>
+    <p>Explore scheduled servicing plans for ongoing maintenance.</p>
+    <div class="price">S$22.62 <small>/ unit, from</small></div>
+    <a class="btn btn-primary" href="#contact">Ask About Contracts</a>
+   </article>
+   <article class="price-card">
+    <span class="price-tag">Deep cleaning</span>
+    <h3>Chemical Wash</h3>
+    <p>For systems requiring a deeper cleaning service.</p>
+    <div class="price">S$55.55 <small>/ unit, from</small></div>
+    <a class="btn btn-outline" href="#contact">Enquire Now</a>
+   </article>
+  </div>
+  <p class="price-note">Other advertised services include ThermArctic sanitizing from S$38.80 per unit, chemical overhaul from S$122.21 per unit and troubleshooting from S$60.60 per trip. Prices are subject to service scope, unit configuration and confirmation by Airple. Verify all current rates and GST treatment before publication.</p>
+ </div>
+</section>
+
+<section class="section app-cta">
+ <div class="container app-grid">
+  <div class="app-copy">
+   <span class="eyebrow">Digital service management</span>
+   <h2>Your Aircon Service, Easier to Manage.</h2>
+   <p>Make Airple's digital service experience a central part of the website. Give visitors a clear path to explore the app, manage appointments and access their service information.</p>
+   <div class="app-actions">
+    <a class="btn btn-primary" href="https://www.airple.com.sg/" target="_blank" rel="noopener">Explore Airple Online</a>
+    <a class="btn btn-outline" href="#contact">Ask About the App</a>
+   </div>
+  </div>
+  <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9?auto=format&fit=crop&w=1100&q=85" alt="Smartphone representing digital service management" loading="lazy">
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">Why Airple</span>
+   <h2>More Visibility at Every Step.</h2>
+   <p>Show customers how the service experience differs from a traditional booking process.</p>
+  </div>
+  <div class="why-grid">
+   <article class="why-item"><div class="why-num">01</div><h3>Digital Convenience</h3><p>Online booking and service management features help customers arrange and manage appointments.</p></article>
+   <article class="why-item"><div class="why-num">02</div><h3>Service Transparency</h3><p>Technician tracking and digital service records provide greater visibility during the service process.</p></article>
+   <article class="why-item"><div class="why-num">03</div><h3>Multiple Service Options</h3><p>Customers can enquire about routine servicing, deeper cleaning, repairs and installation in one place.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container cta-inner">
+  <div>
+   <h2>Ready to Arrange Your Next Aircon Service?</h2>
+   <p>Choose a service and get in touch with Airple.</p>
+  </div>
+  <div class="cta-actions">
+   <a class="btn btn-outline" href="#contact">Book a Service</a>
+   <a class="btn btn-wa" href="https://wa.me/6583856888" target="_blank" rel="noopener">WhatsApp Us</a>
+  </div>
+ </div>
+</section>
+
+<section class="section contact" id="contact">
+ <div class="container contact-grid">
+  <div class="contact-copy">
+   <span class="eyebrow">Contact Airple</span>
+   <h2>Let's Get Your Aircon Sorted.</h2>
+   <p>Tell us what you need and the team can assist with the next steps.</p>
+   <div class="contact-list">
+    <div class="contact-row"><div class="contact-icon">☎</div><div><strong>Phone</strong><a href="tel:+6583856888">+65 8385 6888</a></div></div>
+    <div class="contact-row"><div class="contact-icon">@</div><div><strong>Email</strong><a href="mailto:ask@airple.com.sg">ask@airple.com.sg</a></div></div>
+    <div class="contact-row"><div class="contact-icon">⌖</div><div><strong>Website</strong><a href="https://www.airple.com.sg/" target="_blank" rel="noopener">www.airple.com.sg</a></div></div>
+    <div class="contact-row"><div class="contact-icon">◷</div><div><strong>Service coverage</strong><span>Singapore islandwide, as advertised by the company</span></div></div>
+   </div>
+   <p style="margin-top:23px"><a class="btn btn-wa" href="https://wa.me/6583856888" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+  </div>
+  <form class="form-card" id="enquiryForm">
+   <h3>Send an Enquiry</h3>
+   <p>Share your requirements and continue the conversation through WhatsApp.</p>
+   <div class="form-grid">
+    <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="Name"></div>
+    <div class="field"><label for="phone">Contact number *</label><input id="phone" name="phone" autocomplete="tel" required placeholder="Phone number"></div>
+    <div class="field"><label for="service">Service required *</label>
+     <select id="service" name="service" required>
+      <option value="">Select a service</option>
+      <option>General servicing</option><option>Chemical wash</option><option>ThermArctic sanitizing</option><option>Chemical overhaul</option><option>Repair / troubleshooting</option><option>Gas top-up</option><option>Installation</option><option>Maintenance contract</option><option>Other</option>
+     </select>
+    </div>
+    <div class="field"><label for="units">Number of units</label><select id="units" name="units"><option value="">Select quantity</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5 or more</option><option>Not applicable</option></select></div>
+    <div class="field full"><label for="location">Location / postal code</label><input id="location" name="location" placeholder="Your area or postal code"></div>
+    <div class="field full"><label for="message">Additional details</label><textarea id="message" name="message" placeholder="Tell us about your aircon issue or requirements."></textarea></div>
+   </div>
+   <button class="btn btn-primary" type="submit">Continue to WhatsApp →</button>
+   <p class="form-hint">This form prepares a WhatsApp message. It does not send information to a website server.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <a class="brand" href="#home"><span class="brand-symbol">A</span><span class="brand-name">AIRPLE<small>SMART AIRCON CARE</small></span></a>
+    <p>Air-conditioning servicing, installation, cleaning and maintenance with a more connected digital service experience.</p>
+   </div>
+   <div>
+    <h4>Explore</h4>
+    <div class="footer-links">
+     <a href="#about">About Airple</a><a href="#digital">Digital Experience</a><a href="#services">Our Services</a><a href="#pricing">Service Pricing</a><a href="#contact">Contact Us</a>
+    </div>
+   </div>
+   <div>
+    <h4>Contact</h4>
+    <div class="footer-links">
+     <a href="tel:+6583856888">+65 8385 6888</a>
+     <a href="mailto:ask@airple.com.sg">ask@airple.com.sg</a>
+     <a href="https://wa.me/6583856888" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+     <a href="https://www.airple.com.sg/" target="_blank" rel="noopener">Official Website</a>
+    </div>
+   </div>
+  </div>
+  <div class="copyright">
+   <span>© <span id="year"></span> Airple. All rights reserved.</span>
+   <span>Homepage redesign concept. Confirm company information before publication.</span>
+  </div>
+ </div>
+</footer>
+
+<div class="mobile-bar" aria-label="Quick contact actions">
+ <a class="btn btn-primary" href="tel:+6583856888">Call Now</a>
+ <a class="btn btn-wa" href="https://wa.me/6583856888" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const navLinks=document.getElementById('navLinks');
+
+menuToggle.addEventListener('click',()=>{
+ const open=navLinks.classList.toggle('open');
+ menuToggle.setAttribute('aria-expanded',String(open));
+ menuToggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+ menuToggle.textContent=open?'×':'☰';
+});
+
+navLinks.querySelectorAll('a').forEach(link=>{
+ link.addEventListener('click',()=>{
+  navLinks.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded','false');
+  menuToggle.setAttribute('aria-label','Open navigation');
+  menuToggle.textContent='☰';
+ });
+});
+
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('enquiryForm').addEventListener('submit',function(event){
+ event.preventDefault();
+ if(!this.reportValidity())return;
+ const form=new FormData(this);
+ const message=[
+  'Hello Airple, I would like to enquire about an aircon service.',
+  '',
+  'Name: '+form.get('name'),
+  'Contact: '+form.get('phone'),
+  'Service: '+form.get('service'),
+  'Number of units: '+(form.get('units')||'Not specified'),
+  'Location: '+(form.get('location')||'Not specified'),
+  'Details: '+(form.get('message')||'Not specified')
+ ].join('\n');
+ window.open('https://wa.me/6583856888?text='+encodeURIComponent(message),'_blank','noopener');
+});
+</script>
+</body>
+</html>
